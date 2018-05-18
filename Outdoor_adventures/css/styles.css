@@ -1,18 +1,18 @@
-/* styling for navbar */
 ul {
-  margin-left: -10px;
-  margin-right: -8px;
-    list-style-type: none;
-    text-align: center;
-    top: 0;
-    padding: 10px ;
-    overflow: hidden;
-    background-color: #333;
-}
+  margin-right: -10px;
+  margin-left: -8px;
+  list-style-type: none;
+  text-align: center;
+  top: 0;
+  overflow: hidden;
+  background-image: url("https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  padding: 10px;
+  background-color: #333; }
 
-li {    float: left;
-}
-/* category dropdown code */
+li {
+  float: left; }
+
+  /* category dropdown code */
 li a, .dropbtn {
     display: inline-block;
     color: #818181;
@@ -57,44 +57,54 @@ li.dropdown {
     display: block;
 }
 
-.container{
+.container {
   display: grid;
   border: solid black 3px;
-  grid-template-columns:100px;
+  grid-template-columns: 100px;
   grid-template-rows: 100px;
-  grid-gap:10px;
-}
+  grid-gap: 10px; }
 
-.Camping{
+.camping {
   background-color: white;
   grid-column-start: 1;
-  grid-column-end:4;
-  grid-row-start:1;
+  grid-column-end: 4;
+  grid-row-start: 1;
   grid-row-end: 2;
   padding: 75px;
-  grid-gap: 10px;
-}
+  grid-gap: 10px; }
 
-.Hiking{
+.hiking {
   background-color: white;
   grid-column-start: 1;
-  grid-column-end:2;
+  grid-column-end: 2;
   padding: 75px;
-  grid-gap: 10px;
-}
+  grid-gap: 10px; }
 
-.Fishing{
+.Fishing {
   background-color: white;
   grid-column-start: 1;
-  grid-column-end:3;
+  grid-column-end: 3;
   padding: 75px;
-  grid-gap: 10px;
+  grid-gap: 10px; }
+
+/* for medium scale devices like tablets */
+@media only screen and (max-width:1600px){
+  header, body, footer{
+    padding: 20px;
+  }
 }
 
-.Rock{
-  background-color: white;
-  grid-column-start: 3;
-  grid-column-end:4;
-  padding: 75px;
-  grid-gap: 10px;
+/*for large mobile devices like tablets*/
+@media only screen and (max-width:960px){
+  header, nav, section, article, footer{
+    padding: 20px;
+  }
 }
+
+/*for small mobile devices like phones*/
+@media only screen and (max-width:500px){
+  header, nav, section, article, footer{
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

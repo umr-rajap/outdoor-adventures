@@ -1,0 +1,86 @@
+// Navbar and dropdown done using variables
+$primaryMargin-left : -10px;
+$primaryMargin-right: -8px;
+$primaryList-style-type: none;
+$primaryText-align: center;
+$primaryTop: 0;
+$primaryPadding: 10px;
+$primaryOverflow: hidden;
+$primaryBackground-color: #333;
+$primaryFloat: left;
+
+
+ul{
+  margin-left: $primaryMargin-left;
+  margin-left: $primaryMargin-right;
+  list-style-type: $primaryList-style-type;
+  text-align: $primaryText-align;
+  top: $primaryTop;
+  overflow: $primaryOverflow;
+  padding: $primaryPadding;
+  background-color: $primaryBackground-color;
+}
+
+li{
+  float: $primaryFloat;
+}
+
+
+//container done using mixin
+@mixin container{
+  display:grid;
+  border: solid black 3px;
+  grid-template-columns: 100px;
+  grid-template-rows: 100px;
+  grid-gap: 10px;
+}
+
+.container{
+  @include container;
+}
+
+@mixin camping{
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end:4;
+  grid-row-start:1;
+  grid-row-end: 2;
+  padding: 75px;
+  grid-gap: 10px;
+}
+
+.camping{
+  @include camping;
+}
+
+@mixin hiking{
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end:2;
+  padding: 75px;
+  grid-gap: 10px;
+}
+
+.hiking{
+  @include hiking;
+}
+
+@mixin fishing{
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end:3;
+  padding: 75px;
+  grid-gap: 10px;
+}
+
+.Fishing{
+  @include fishing;
+}
+
+@mixin Rock{
+  background-color: white;
+  grid-column-start: 3;
+  grid-column-end:4;
+  padding: 75px;
+  grid-gap: 10px;
+}
